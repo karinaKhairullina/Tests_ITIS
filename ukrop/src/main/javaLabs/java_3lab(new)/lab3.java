@@ -1,5 +1,4 @@
 package java_3lab;
-
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -13,6 +12,13 @@ public class lab3 extends TestBase {
         app.getNavigationHelper().openHomePage();
         AccountData user = new AccountData(app.getLoginHelper());
         user.login();
+
+        // Получаем логин созданного юзера
+        String lastUserCreated = app.getLoginHelper().assertUsername();
+
+        // Проверяем, что логин юзера соответствует ожидаемому
+        Assert.assertEquals("Karina", lastUserCreated);
+
     }
 
     @Test
@@ -36,6 +42,14 @@ public class lab3 extends TestBase {
         AccountData user = new AccountData(app.getLoginHelper());
         NoteEdit note = new NoteEdit(app.getNoteEditHelper());
         note.edit("Теперь это исправленная заметка!");
+
+        // Получаем текст последней отредактированной заметки
+        String lastEditNote = app.getNoteEditHelper().getLastEditNote();
+
+        // Проверяем, что отредактированная заметка соответствует ожидаемому
+        Assert.assertEquals("Теперь это исправленная заметка!", lastEditNote);
+
+
     }
 }
 

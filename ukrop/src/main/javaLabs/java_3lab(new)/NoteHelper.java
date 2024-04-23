@@ -10,16 +10,17 @@ public class NoteHelper extends HelperBase {
     }
 
     public String getLastCreatedNoteText() {
-        return driver.findElement(By.id("DiText")).getText();
+        WebElement noteElement = app.getDriver().findElement(By.cssSelector("div.dt"));
+        return noteElement.getText();
     }
-
 
     public void create(String noteText) {
         NavigationHelper navigationHelper = app.getNavigationHelper();
         navigationHelper.openHomePage();
 
-        driver.findElement(By.id("DiText")).click();
-        driver.findElement(By.id("DiText")).sendKeys(noteText);
-        driver.findElement(By.id("btn_save")).click();
+        app.getDriver().findElement(By.id("DiText")).click();
+        app.getDriver().findElement(By.id("DiText")).sendKeys(noteText);
+        app.getDriver().findElement(By.id("btn_save")).click();
     }
 }
+

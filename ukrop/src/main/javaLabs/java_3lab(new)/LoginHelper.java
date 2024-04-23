@@ -1,7 +1,7 @@
 package java_3lab;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class LoginHelper extends HelperBase {
     private String username;
@@ -11,6 +11,10 @@ public class LoginHelper extends HelperBase {
         super(app);
         this.username = username;
         this.password = password;
+    }
+
+    public String assertUsername() {
+        return app.getDriver().findElement(By.id("author")).getText();
     }
 
     public void login() {

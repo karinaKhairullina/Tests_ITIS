@@ -1,5 +1,6 @@
-package java_3lab;
+package java_4lab.Tests;
 
+import java_4lab.ApplicationManager;
 import org.junit.BeforeClass;
 
 public class TestBase {

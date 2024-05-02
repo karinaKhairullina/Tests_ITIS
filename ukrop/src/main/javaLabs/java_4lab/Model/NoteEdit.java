@@ -1,5 +1,7 @@
-package java_3lab;
+package java_4lab.Model;
 
+
+import java_4lab.Helpers.NoteEditHelper;
 
 public class NoteEdit {
     private NoteEditHelper noteEditHelper;

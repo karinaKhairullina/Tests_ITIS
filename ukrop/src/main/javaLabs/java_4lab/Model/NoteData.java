@@ -1,4 +1,6 @@
-package java_3lab;
+package java_4lab.Model;
+
+import java_4lab.Helpers.NoteHelper;
 
 public class NoteData {
     private NoteHelper noteHelper;

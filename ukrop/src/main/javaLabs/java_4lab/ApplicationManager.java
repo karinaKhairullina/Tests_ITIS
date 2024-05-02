@@ -1,5 +1,9 @@
-package java_3lab;
+package java_4lab;
 
+import java_4lab.Helpers.LoginHelper;
+import java_4lab.Helpers.NavigationHelper;
+import java_4lab.Helpers.NoteEditHelper;
+import java_4lab.Helpers.NoteHelper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 

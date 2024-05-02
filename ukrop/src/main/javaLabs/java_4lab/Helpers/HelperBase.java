@@ -1,6 +1,6 @@
-package java_3lab;
+package java_4lab.Helpers;
 
-import org.openqa.selenium.By;
+import java_4lab.ApplicationManager;
 import org.openqa.selenium.WebDriver;
 
 public class HelperBase {

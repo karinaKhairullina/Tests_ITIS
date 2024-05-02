@@ -1,5 +1,5 @@
-package java_3lab;
-import org.openqa.selenium.WebDriver;
+package java_4lab.Helpers;
+import java_4lab.ApplicationManager;
 
 public class NavigationHelper extends HelperBase {
     private String baseURL;

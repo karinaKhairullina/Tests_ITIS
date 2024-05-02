@@ -1,6 +1,6 @@
-package java_3lab;
+package java_4lab.Model;
 
-import org.openqa.selenium.WebDriver;
+import java_4lab.Helpers.LoginHelper;
 
 public class AccountData {
     private LoginHelper loginHelper;

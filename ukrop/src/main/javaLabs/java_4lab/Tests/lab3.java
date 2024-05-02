@@ -1,4 +1,7 @@
-package java_3lab;
+package java_4lab.Tests;
+import java_4lab.Model.AccountData;
+import java_4lab.Model.NoteData;
+import java_4lab.Model.NoteEdit;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
